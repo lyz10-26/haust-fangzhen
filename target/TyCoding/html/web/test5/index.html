@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | New Unity Project</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/test5.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">New Unity Project</div>
+        <div style="text-align: left"><br>
+          场景三：<br>
+          场景动画<br>
+          动画播放：点击该按钮可以播放整个场景动画。<br>
+          <br>
+          相机操作<br>
+          机位显示：点击该按钮可以显示场景中所有摄像机的位置。<br>
+          自由相机：点击该按钮后，通过按住鼠标左键，可以对场景进行360度全景预览。按住鼠标中间的滚轮，可以对场景整体放大或者缩小。<br>
+          固定相机：点击该按钮可以以一个固定视角对整个动场景进行预览。（近景）<br>
+          动画相机： 点击该按钮可以显示特定角度的场景，（俯视）（全景）<br>
+          <br>
+          灯光操作<br>
+          灯光显示：点击该按钮可以为动画场景增加光照效果，聚光灯效果，不同方向3盏灯。<br>
+          灯光1|2|3开关：点击该按钮可以关闭场景中的部分灯光。分别按不同的按钮可以使场景中的灯光依次全部关闭。
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

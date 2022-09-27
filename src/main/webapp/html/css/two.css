@@ -1,0 +1,95 @@
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot');
+    src: url('../fonts/icomoon.eot') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf') format('truetype'),
+        url('../fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.two {
+    width: 1350px;
+    margin: 0 auto;
+}
+.box_one {
+    position: relative;
+    margin-top: 100px;
+    width: 800px;
+    height: 450px;
+}
+.study_team {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 30px;
+    color: #919191;
+}
+.study_team::before {
+    content: '\e919';
+    position: relative;
+    font-family: 'icomoon';
+    top: 2px;
+}
+.team {width: 800px;
+    display: flex;
+}
+.team div {
+    width: 100px;
+    flex-grow: 1;
+    line-height: 31px;
+    font-size: 17px;
+    color: #919191;
+    text-align: center;
+}
+.box_two {
+    height: 200px;
+    position: relative;
+}
+.box_two h4 {
+    position: absolute;
+    bottom: 60px;
+}
+.box_three {
+    width: 1350px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.box_three div {
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.box_three_one {
+    height: 60px;
+    width: 370px;
+    position: absolute;
+    color: #4f4f6f;
+}
+.box_three div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    min-width: 100%;
+    transform: translate(-50%, 13%);
+}
+.box_three div .img_two {
+    position: absolute;
+    top: 50%;
+    display: block;
+    min-width: 100%;
+    transform: translate(-50%, 7%);
+}
+.box_three div .img_three {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    min-width: 100%;
+    transform: translate(-50%, 7%);
+}

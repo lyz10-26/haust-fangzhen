@@ -1,0 +1,138 @@
+/* 页面公共样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 版心 */
+.w {
+    width: 1800px;
+    margin: 0 auto;
+}
+/* 快捷导航栏模块 */
+.shortcut {
+    margin: 2px auto 0px;
+    background-color: #14178f;
+    height: 100px;
+}
+.fl {
+    margin-left: 50px;
+    width: 450px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #14178f;
+    float: left;
+}
+.fr {
+    flex-direction: row;
+    display: flex;
+    float: right;
+    margin-left: 20px;
+
+}
+.fr ul li {
+    float: left;
+}
+li {
+    list-style: none;
+}
+.fr ul li a {
+    text-align: center;
+    flex-grow: 1;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+.fr a:hover {
+    background: #469dff;
+    display: block;
+    border-bottom: 1px solid bisque
+}
+.header {
+    flex-direction: row;
+    height: 550px;
+    background-size: contain;
+    width: 100%;
+    background: no-repeat;
+}
+.title {
+    position: relative;
+    float: right;
+    top: 70px;
+    font-size: 73px;
+    width: 900px;
+    height: 400px;
+    color: #fff;
+    font-weight: 700;
+    right: 50px;
+}
+.title_Chinese {
+    float: right;
+    text-shadow: 2px 2px 2px rgb(3, 235, 247);
+}
+.title_English {
+    text-shadow: 2px 2px 2px rgba(235, 18, 214, 0.976);
+    position: absolute;
+    top: 200px;
+    left: 0;
+    font-size: 28px;
+    width: 900px;
+    color: #fff;
+}
+.land {
+    position: absolute;
+    right: 200px;
+    top: 320px;
+    font-size: 30px;
+    width: 160px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid rgb(204, 204, 204);
+    text-align: center;
+    background-color: #29237f;
+    text-decoration: none;
+    color: #ccc;
+}
+.land:hover,
+.land2:hover {
+    background-color: rgb(0, 148, 217);
+    border: 2px solid rgb(216, 42, 11);
+}
+.land2 {
+    position: absolute;
+    right: 20px;
+    top: 320px;
+    font-size: 30px;
+    width: 160px;
+    height: 80px;
+    line-height: 80px;
+    border: 2px solid rgb(204, 204, 204);
+    text-align: center;
+    background-color: #23257f;
+    text-decoration: none;
+    color: #ccc;
+}
+.f {
+    background-color: #23257f;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+.f div {
+    flex-grow: 1;
+    height: 150px;
+    width: 400px;
+    text-align: center;
+    line-height: 150px;
+    color: #fff;
+
+}
+.f a {
+    color: rgb(107, 183, 158);
+    text-decoration: none;
+}

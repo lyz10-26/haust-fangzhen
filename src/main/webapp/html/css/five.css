@@ -1,0 +1,39 @@
+.five {
+position: relative;
+top: 100px;
+    width: 1350px;
+    height: 1500px;
+    margin: 0 auto;
+}
+.five_top {
+    line-height: 35px;
+    font-size: 18px;
+    height: 400px;
+}
+.five_bottom {
+    position: relative;
+    width: 1350px;
+    height: 900px;
+    line-height: 35px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4 {
+    line-height: 35px;
+    font-size: 18px;
+}
+.five_bottom div {
+    -moz-box-shadow:0 0 10px 10px #f4f4f4;
+    -webkit-box-shadow:0 0 10px 10px #f4f4f4;
+    box-shadow:0 0 10px 10px #f4f4f4;
+    width: 400px;
+    height: 850px;
+}
+.five_bottom .wenben{
+    width: 350px;
+    height: 750px;
+    list-style-type: none;
+    margin: 0 auto;
+}

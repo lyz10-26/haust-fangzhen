@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>考试系统</title>
+    <meta charset="utf-8">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .div_bor {
+            border: 3px solid #ffffff;
+            padding: 5px 5px 10px 5px;
+            background: rgb(255 255 255);
+            box-shadow: 10px 5px 5px rgb(255 255 255 / 60%);
+        }
+        .button {
+            display: block;
+            width: 270px;
+            height: 60px;
+            margin: 0 auto;
+            box-shadow: 3px 3px 5px rgb(0, 0, 0, .6);
+            font-size: 20px;
+        }
+        .button:hover {
+            border: 2px solid #274b8b;
+            background-color: #409eff;
+        }
+        img {
+            display: inline-block;
+            width: 249px;
+            background-size: 100%;
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+        .tm{
+            width: 300px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="div_bor">
+        <div class="tm">
+        <div id="time" style="color:red;   position: fixed;float: right;margin: 12px 20px 0 0;padding: 0 0 0 0;font-size: xx-large"></div>
+    </div>
+    <br /><br /><br />
+        <hr />
+        <h2 style="text-align: center;">单项选择题</h2>
+        <p>1、下列不属于动画场景设计的首要任务的是（ ）</p>
+        <input type="radio" name="radio_1" id="1" value="A"><label for="1">A 满足角色表演</label>
+        <input type="radio" name="radio_1" id="2" value="B"><label for="2"> B 满足视觉审美</label>
+        <input type="radio" name="radio_1" id="3" value="C"><label for="3"> C 动作表现的需要</label>
+        <input type="radio" name="radio_1" id="4" value="D"><label for="4"> D 后期制作的需要</label>
+        <p>2、下列不属于动画场景塑造的空间的是（ ）</p>
+        <input type="radio" name="radio_2" id="01" value="A"><label for="01">A 主观空间 </label>
+        <input type="radio" name="radio_2" id="02" value="B"><label for="02"> B 物质空间</label>
+        <input type="radio" name="radio_2" id="03" value="C"><label for="03"> C 社会空间</label>
+        <input type="radio" name="radio_2" id="04" value="D"><label for="04"> D 个性空间</label>
+        <p>3、动画场景所塑造的物质空间又被称之为（ ）</p>
+        <input type="radio" name="radio_3" id="11" value="A"><label for="11"> A 现实空间 </label>
+        <input type="radio" name="radio_3" id="22" value="B"><label for="22"> B 叙事空间 </label>
+        <input type="radio" name="radio_3" id="33" value="C"><label for="33"> C 虚拟空间 </label>
+        <input type="radio" name="radio_3" id="44" value="D"><label for="44"> D 叙事空间</label>
+        <p>4、下列不属于动画场景设计的基本特征的是（ ）</p>
+        <input type="radio" name="radio_4" id="10" value="A"><label for="10"> A 视觉性 </label>
+        <input type="radio" name="radio_4" id="20" value="B"><label for="20"> B 空间性 </label>
+        <input type="radio" name="radio_4" id="30" value="C"><label for="30">C 虚拟性 </label>
+        <input type="radio" name="radio_4" id="40" value="D"><label for="40"> D 造型性</label>
+        <p>5、动画场景营造情绪氛围的功能主要表现在渲染气氛和（ ）上面。</p>
+        <input type="radio" name="radio_5" id="1a" value="A"><label for="1a">A表现叙事 </label>
+        <input type="radio" name="radio_5" id="2a" value="B"><label for="2a"> B交代环境</label>
+        <input type="radio" name="radio_5" id="3a" value="C"><label for="3a"> C推动剧情</label>
+        <input type="radio" name="radio_5" id="4a" value="D"><label for="4a"> D表达意境</label>
+        <p>6、下列不属于动画片中的角色包括（ ）</p>
+        <input type="radio" name="radio_6" id="1b" value="A"><label for="1b">A人物 </label>
+        <input type="radio" name="radio_6" id="2b" value="B"><label for="2b"> B道具 </label>
+        <input type="radio" name="radio_6" id="3b" value="C"><label for="3b"> C动物 </label>
+        <input type="radio" name="radio_6" id="4b" value="D"><label for="4b">D有生命的物体 </label>
+        <p>7、心理空间的主要作用体现在（ ）</p>
+        <input type="radio" name="radio_7" id="1q" value="A"><label for="1q">A 反映角色内心活动的形象空间 </label>
+        <input type="radio" name="radio_7" id="2q" value="B"><label for="2q">B 对角色的心理变化和内心情感世界的空间烘托</label>
+        <input type="radio" name="radio_7" id="3q" value="C"><label for="3q">C 角色内心情感和情绪的延伸和外化形式</label>
+        <input type="radio" name="radio_7" id="4q" value="D"><label for="4q">D 对动画角色的表演舞台与环境的展示</label>
+        <p>8、角色的心理空间又被称之为（）</p>
+        <input type="radio" name="radio_8" id="z1" value="A"><label for="z1">A情绪空间</label>
+        <input type="radio" name="radio_8" id="z2" value="B"><label for="z2"> B假定空间 </label>
+        <input type="radio" name="radio_8" id="z3" value="C"><label for="z3"> C虚拟空间</label>
+        <input type="radio" name="radio_8" id="z4" value="D"><label for="z4"> D主观空间 </label>
+        <p>9、角色的心理空间可以分为主观心理空间和（ ）</p>
+        <input type="radio" name="radio_9" id="x1" value="A"><label for="x1">A抒情心理空间 </label>
+        <input type="radio" name="radio_9" id="x2" value="B"><label for="x2">B现实心理空间</label>
+        <input type="radio" name="radio_9" id="x3" value="C"><label for="x3">C虚拟心理空间</label>
+        <input type="radio" name="radio_9" id="x4" value="D"><label for="x4">D客观心理空间</label>
+        <p>10、 传统商业性动画影片大多采用哪种叙事时间的方式（ ）</p>
+        <input type="radio" name="radio_10" id="xx1" value="A"><label for="xx1">A错乱的叙事时间 </label>
+        <input type="radio" name="radio_10" id="xx2" value="B"><label for="xx2"> B连贯的叙事时间</label>
+        <input type="radio" name="radio_10" id="xx3" value="C"><label for="xx3"> C虚幻的叙事时间 </label>
+        <input type="radio" name="radio_10" id="xx4" value="D"><label for="xx4"> D淡化的叙事时间</label>
+        <p>11、下列对动画场景的描述错误的是（ ）</p>
+        <input type="radio" name="radio_11" id="111" value="A"><label for="111">A 可以把自然景象或者生活景物作为参照物</label>
+        <input type="radio" name="radio_11" id="112" value="B"><label for="112">B 为剧本中角色进行表演的空间和舞台进行相关美术设计</label>
+        <input type="radio" name="radio_11" id="113" value="C"><label for="113"> C 与其他种类的艺术作品的区别不大</label>
+        <input type="radio" name="radio_11" id="114" value="D"><label for="114">D 与电影场景和戏剧场景有一定的相似性</label>
+        <p>12、下列对动画场景与动画背景的关系叙述正确的是（ ）</p>
+        <input type="radio" name="radio_12" id="122" value="A"><label for="122">A动画场景包含动画背景，是个更大的概念</label>
+        <input type="radio" name="radio_12" id="222" value="B"><label for="222">B动画背景包含动画场景，是个更大的概念</label>
+        <input type="radio" name="radio_12" id="322" value="C"><label for="322">C两者的概念没有差别</label>
+        <input type="radio" name="radio_12" id="422" value="D"><label for="422"> D 在传统动画片中，动画场景和动画背景的概念可以互换</label>
+        <p>13、动画片中每一幕场景的转换变化在时间性上是（ ）的发展</p>
+        <input type="radio" name="radio_13" id="1m" value="A"><label for="1m">A.线性 </label>
+        <input type="radio" name="radio_13" id="2m" value="B"><label for="2m">B.非线性 </label>
+        <input type="radio" name="radio_13" id="3m" value="C"><label for="3m">C.平行性</label>
+        <input type="radio" name="radio_13" id="4m" value="D"><label for="4m"> D 个性空间</label>
+        <p>14、 动画片中的长镜头持续时间通常是（ ）</p>
+        <input type="radio" name="radio_14" id="1mm" value="A"><label for="1mm"> A.10秒</label>
+        <input type="radio" name="radio_14" id="2mm" value="B"><label for="2mm"> B.30秒</label>
+        <input type="radio" name="radio_14" id="3mm" value="C"><label for="3mm"> C.20秒</label>
+        <input type="radio" name="radio_14" id="4mm" value="D"><label for="4mm"> D.15秒</label>
+        <p>15、动画镜头运动指的是（ ）</p>
+        <input type="radio" name="radio_15" id="1r" value="A"><label for="1r">A.角色在不同力量的作用下产生变形或移动</label>
+        <p><input type="radio" name="radio_15" id="2r" value="B"><label for="2r">B.多个镜头组接起来,将故事向前不断推进的动态发展过</label></p>
+        <p><input type="radio" name="radio_15" id="3r" value="C"><label for="3r">C.在镜头中运用推、拉
+                、摇、移等手段使镜头画面的景别、构图产生运动效果。</label></p>
+        <p><input type="radio" name="radio_15" id="4r" value="D"><label for="4r">D. 镜头在不同景别中切换</label>
+        </p>
+        <p>16、在动画场景制作中，如果物体具有重复连续的运动方式（如砍树和心脏的跳动），场景制作用哪种方法来完成（ ）</p>
+        <input type="radio" name="radio_16" id="1rr" value="A"><label for="1rr">A传统动画场景</label>
+        <input type="radio" name="radio_16" id="2rr" value="B"><label for="2rr">B连续叠化制作</label>
+        <input type="radio" name="radio_16" id="3rr" value="C"><label for="3rr">C循环动画场景 </label>
+        <input type="radio" name="radio_16" id="4rr" value="D"><label for="4rr"> D技巧动画场景</label>
+        <p>17、动画影片的基础时间单位是以秒和（ ）为单位的</p>
+        <input type="radio" name="radio_17" id="1ww" value="A"><label for="1ww">A分 </label>
+        <input type="radio" name="radio_17" id="2ww" value="B"><label for="2ww"> B格 </label>a
+        <input type="radio" name="radio_17" id="3ww" value="C"><label for="3ww"> C秒</label>
+        <input type="radio" name="radio_17" id="4ww" value="D"><label for="4ww"> D小时 </label>
+        <p>18、下列动画场景中，属于成角透视法的是（ ）</p>
+        <input type="radio" name="radio_18" id="1ee" value="A"><label for="1ee">A <img src="image/01.jpg"> </label>
+        <input type="radio" name="radio_18" id="2ee" value="B"><label for="2ee"> B <img src="image/02.jpg"></label>
+        <input type="radio" name="radio_18" id="3ee" value="C"><label for="3ee"> C <img src="image/03.jpg"></label>
+        <input type="radio" name="radio_18" id="4ee" value="D"><label for="4ee"> D <img src="image/04.jpg"></label>
+        <p>19、下列动画场景中，属于三点透视法的是（ ）</p>
+        <input type="radio" name="radio_19" id="001" value="A"><label for="001">A <img src="image/05.jpg"> </label>
+        <input type="radio" name="radio_19" id="002" value="B"><label for="002"> B <img src="image/06.jpg"></label>
+        <input type="radio" name="radio_19" id="003" value="C"><label for="003"> C <img src="image/07.jpg"></label>
+        <input type="radio" name="radio_19" id="004" value="D"><label for="004"> D <img src="image/08.jpg"></label>
+        <p>20、下列动画场景中，属于仰视透视法的是（ ）</p>
+        <input type="radio" name="radio_20" id="0201" value="A"><label for="0201">A <img src="image/09.jpg"> </label>
+        <input type="radio" name="radio_20" id="0202" value="B"><label for="0202"> B <img src="image/10.jpg"></label>
+        <input type="radio" name="radio_20" id="0203" value="C"><label for="0203"> C <img src="image/11.jpg"></label>
+        <input type="radio" name="radio_20" id="0204" value="D"><label for="0204"> D <img src="image/12.jpg"></label>
+        <p>21、下列动画场景中，属于俯视透视法的是（ ）</p>
+        <input type="radio" name="radio_21" id="0031" value="A"><label for="0031">A <img src="image/13.jpg"> </label>
+        <input type="radio" name="radio_21" id="0032" value="B"><label for="0032"> B <img src="image/14.jpg"></label>
+        <input type="radio" name="radio_21" id="0033" value="C"><label for="0033"> C <img src="image/15.jpg"></label>
+        <input type="radio" name="radio_21" id="0034" value="D"><label for="0034"> D <img src="image/16.jpg"></label>
+        <p>22、下列动画场景中，属于广角透视法的是（ ）</p>
+        <input type="radio" name="radio_22" id="00r1" value="A"><label for="00r1">A <img src="image/17.jpg"> </label>
+        <input type="radio" name="radio_22" id="00r2" value="B"><label for="00r2"> B <img src="image/18.jpg"></label>
+        <input type="radio" name="radio_22" id="00r3" value="C"><label for="00r3"> C <img src="image/19.jpg"></label>
+        <input type="radio" name="radio_22" id="00r4" value="D"><label for="00r4"> D <img src="image/20.jpg"></label>
+        <p>23、动画场景中，决定光形式类型的因素包括光的（ ）和柔和度 </p>
+        <input type="radio" name="radio_23" id="00t1" value="A"><label for="00t1">A亮度</label>
+        <input type="radio" name="radio_23" id="00t2" value="B"><label for="00t2"> B柔和度</label>
+        <input type="radio" name="radio_23" id="00t3" value="C"><label for="00t3"> C纯度</label>
+        <input type="radio" name="radio_23" id="00t4" value="D"><label for="00t4"> D强度</label>
+        <p>24、下列动画场景中，属于平行透视法的是（ ）</p>
+        <input type="radio" name="radio_24" id="00y1" value="A"><label for="00y1">A <img src="image/21.jpg"> </label>
+        <input type="radio" name="radio_24" id="00y2" value="B"><label for="00y2">B <img src="image/22.jpg"></label>
+        <input type="radio" name="radio_24" id="00y3" value="C"><label for="00y3">C <img src="image/23.jpg"></label>
+        <input type="radio" name="radio_24" id="00y4" value="D"><label for="00y4">D <img src="image/24.jpg"></label>
+        <p>25、动画场景指动画影片中除（ ）以外的随着时间改变而变化的一切物体的造型设计。</p>
+        <input type="radio" name="radio_25" id="00u1" value="A"><label for="00u1">A故事情节</label>
+        <input type="radio" name="radio_25" id="00u2" value="B"><label for="00u2"> B角色造型</label>
+        <input type="radio" name="radio_25" id="00u3" value="C"><label for="00u3"> C道具设计 </label>
+        <input type="radio" name="radio_25" id="00u4" value="D"><label for="00u4"> D环境设计</label>
+        <p>26、下列不属于动画场景的是（ ）</p>
+        <input type="radio" name="radio_26" id="00i1" value="A"><label for="00i1">A 内景</label>
+        <input type="radio" name="radio_26" id="00i2" value="B"><label for="00i2"> B外景</label>
+        <input type="radio" name="radio_26" id="00i3" value="C"><label for="00i3"> C全景</label>
+        <input type="radio" name="radio_26" id="00i4" value="D"><label for="00i4"> D 内外结合景</label>
+        <p>27、下列动画场景中，属于近景的是（ ）</p>
+        <input type="radio" name="radio_27" id="0j01" value="A"><label for="0j01">A <img src="image/25.jpg"></label>
+        <input type="radio" name="radio_27" id="0j02" value="B"><label for="0j02">B <img src="image/26.jpg"></label>
+        <input type="radio" name="radio_27" id="0j03" value="C"><label for="0j03">C <img src="image/27.jpg"></label>
+        <input type="radio" name="radio_27" id="0j04" value="D"><label for="0j04">D <img src="image/28.jpg"></label>
+        <p>28、下列动画场景中，属于远景的是（ ）</p>
+        <input type="radio" name="radio_28" id="0hh01" value="A"><label for="0hh01"> A <img src="image/29.jpg"></label>
+        <input type="radio" name="radio_28" id="0hh02" value="B"><label for="0hh02"> B <img src="image/30.jpg"></label>
+        <input type="radio" name="radio_28" id="0hh03" value="C"><label for="0hh03"> C <img src="image/31.jpg"></label>
+        <input type="radio" name="radio_28" id="0hh04" value="D"><label for="0hh04"> D <img src="image/32.jpg"></label>
+        <p>29、下列动画场景中，属于大全景的是（ ）</p>
+        <input type="radio" name="radio_29" id="h001" value="A"><label for="h001"> A <img src="image/33.jpg"></label>
+        <input type="radio" name="radio_29" id="h002" value="B"><label for="h002"> B <img src="image/34.jpg"></label>
+        <input type="radio" name="radio_29" id="h003" value="C"><label for="h003"> C <img src="image/35.jpg"></label>
+        <input type="radio" name="radio_29" id="h004" value="D"><label for="h004"> D <img src="image/36.jpg"></label>
+        <p>30.写实风格的场景适合于表现下列哪种动画片的场景之中。（ ）</p>
+        <input type="radio" name="radio_30" id="00n1" value="A"><label for="00n1">A网络动画 </label>
+        <input type="radio" name="radio_30" id="00n2" value="B"><label for="00n2"> B电视动画</label>
+        <input type="radio" name="radio_30" id="00n3" value="C"><label for="00n3"> C科幻系列动画片</label>
+        <input type="radio" name="radio_30" id="00n4" value="D"><label for="00n4"> D抽象动画 </label>
+    </div>
+    <div>
+        <p><input type="button" class="button" onclick="my_confirm()" value="提交"></p>
+    </div>
+</body>
+<script type="text/javascript">
+    function getjson() {
+        var radio = [];
+        for (var i = 1; i <= 30; i++) {//获取radio的值
+            var radio_name = String("radio_" + i);
+            radio[i - 1] = $('input:radio[name=' + radio_name + ']:checked').val()
+        }
+        //数组转json串
+        return JSON.stringify(radio);
+    }
+    function my_confirm() {
+        var json = getjson();
+        var msg = "您提交的答案是：" + json + ",是否确认提交";
+        if (confirm(msg) === true) {
+            window.location.href = "result.html?radio=" + 30+ "&json=" + json;
+        } else {
+            return false;
+        }
+    }
+    $(function () {
+        var m = 20;
+        var s = 10;
+        setInterval(function () {
+            if (m >= 0) {
+                if (s < 10) {
+                    $('#time').html("剩余时间：" + m + ':0' + s);
+                } else {
+                    $('#time').html("剩余时间：" + m + ':' + s);
+                }
+                s--;
+                if (s < 0) {
+                    s = 59;
+                    m--;
+                }
+                if (m === 0 && s < 1) {
+                    window.location.href = "result.html?radio=" + 30 + "&json=" + getjson();
+                }
+            }
+        }, 1000)
+    })
+</script>
+</html>

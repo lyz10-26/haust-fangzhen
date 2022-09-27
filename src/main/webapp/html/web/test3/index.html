@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | New Unity Project</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/test3.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">New Unity Project</div>
+        <div style="text-align: left"><br>场景二：<br>
+          通过按住鼠标左键，可以对场景进行360度全景预览。按住鼠标中间的滚轮，可以对场景整体放大或者缩小。<br>
+          <br>
+          场景动画<br>
+          动画播放：点击该按钮可以播放整个场景动画。<br>
+          <br>
+          相机操作<br>
+          机位显示：点击该按钮可以显示场景中所有摄像机的位置。总共3个不同位置的摄像机。其中2个摄像机位置固定，另1个跟随拍摄。<br>
+          动画相机： 点击该按钮能够以跟拍摄像机的视角对动画场景进行预览。<br>
+          固定相机：点击该按钮可以通过场景中某个固定位置的摄像机视角，对整个动场景进行预览。（近景）<br>
+          自由相机：点击该按钮可以远景播放预览动画场景，并显示摄像机位置。<br>
+          <br>
+          模型操作<br>
+          模型显示：点击该按钮可以显示（隐藏）动画场景中的部分模型元素。<br>
+          贴图切换：点击该按钮可以对动画场景中部分模型的贴图进行切换。<br>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
